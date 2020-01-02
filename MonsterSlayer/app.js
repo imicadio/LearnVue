@@ -4,7 +4,13 @@ new Vue({
     data: {     
         playerHealth: 100,
         monsterHealth: 100,
-        gameIsRuning: false,
-        
+        gameIsRuning: false
+    },
+    methods: {
+        startGame: function() {
+            this.gameIsRuning = true;
+            this.playerHealth = 100;
+            this.monsterHealth = 100;
+        }
     }
 });
