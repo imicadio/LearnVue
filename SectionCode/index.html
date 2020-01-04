@@ -1,7 +1,21 @@
-<script src="https://unpkg.com/vue/dist/vue.js"></script>
-
-<div id="app">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monster Slayer</title>
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="app1">
   <h1 ref="heading">{{ title }}</h1>
   <button v-on:click="show">Show Paragraph</button>
   <p v-if="showParagraph">This is not always visible</p>
 </div>
+<div id="app2">
+  <h1 ref="heading">{{ title }}</h1>
+  <button v-on:click="onChange">Instance title 1</button>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
